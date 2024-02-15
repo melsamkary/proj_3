@@ -1,0 +1,112 @@
+.navbar{
+    background-color: rgba(246, 231, 231, 0.8);
+   
+}
+.carousel-caption{
+    background-color:rgba(32, 13, 240, 0.5) ;
+}
+.icons{
+    position: fixed;
+    z-index: 1000;
+    top: 350px;
+    right: 50px;
+}
+.gradient-text1{
+    background-clip: text;
+      color: transparent;
+      background-image: linear-gradient( to right,blue,#E6B9DE,blue,#E6B9DE,blue);
+    }
+    .gradient-text2{
+        background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(  to bottom,#E6B9DE,#FAE7F3,#FAE7F3,#E6B9DE);
+    }
+   .test{
+    width: 100%;
+    height: 350px;
+    background-attachment: fixed;
+background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-image: url(../images/fixwd.png);
+   }
+   .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+   }
+   .animtion::after{
+    content:"";
+    position: absolute;
+width: 100%;
+height: 0;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.3);
+transition: 0.5s;
+
+   }
+   .animtion:hover::after{
+width: 100%;
+height: 100%;
+
+   }
+   .test1{
+    width: 100%;
+    height: 350px;
+    background-attachment: fixed;
+background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-image: url(../images/23.jpg);
+   }
+   .background-item{
+    transition: 0.5s;
+    padding: 0 !important;
+    background-image: url(../images/suit11.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+   
+   }
+   .overlay1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+   }
+   .background-item2{
+    transition: 0.5s;
+    position: relative;
+    padding: 0 !important;
+    background-image: url(../images/suit22.jpg);
+    background-size: cover;
+   }
+   .background-item3{
+    transition: 0.5s;
+    padding: 0 !important;
+    background-image: url(../images/suit33.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+   .background-item2:hover{
+transform: scale(0.9);
+   }
+   .background-item:hover{
+    transform: scale(0.9);
+       }
+       .background-item3:hover{
+        transform: scale(0.9);
+           }
+         .crop{
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+         }
+          .sha{
+        box-shadow: -1px 1px 50px 0.5px blue ;
+          }
+          .gradient-text3{
+            background-clip: text;
+          color: transparent;
+          background-image: linear-gradient(  to bottom,#ff79e6,#ff56c1,#1821d1,#E6B9DE);
+        }
+        .crop2{
+            clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+        }

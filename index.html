@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body style="background-color: #FAE7F3" class="mx-1" >
+    <nav class="navbar navbar-expand-lg  sticky-top    "  style="z-index:1050; ">
+      <div class="container-fluid " >
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/pngtree-real-estate-logo-design-png-image_5221419.jpg"
+            width="80px"
+            height="80"
+          />
+        </a>
+        <span
+          class="fw-bold border-end border-3 border-primary p-3 fs-5  gradient-text1"
+          >Real estate</span
+        >
+        <button
+          class="navbar-toggler bg-primary 
+          "
+          
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-primary rounded border border-primary border-2"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text-primary text-capitalize link-opacity-10-hover ">p</span>rojects
+              </a>
+              <ul
+                class="dropdown-menu border rounded border-primary bg-light bg-opacity-25"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-primary" href="#">new capital</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-primary" href="#">new cairo</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-primary" href="#">madint nasr</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-primary" href="#"
+                    >masr elgdeda</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-primary" href="#"
+                    >other cities</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >About</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex gap-2">
+            <input
+              class="form-control me-2 w-100"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary w-50" type="submit">Search</button>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary w-50"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Log in
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade  "
+          
+              id="staticBackdrop"
+              data-bs-keyboard="false"
+              tabindex="5000"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog " >
+                <div class="modal-content"   >
+                  <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="staticBackdropLabel">Log In</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label
+                          for="exampleInputEmail1"
+                          class="form-label text-primary"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                        <div id="emailHelp" class="form-text">
+                          We'll never share your email with anyone else.
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="exampleInputPassword1"
+                          class="form-label text-primary"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                        />
+                      </div>
+                      <div class="mb-3 form-check">
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="flexSwitchCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexSwitchCheckDefault"
+                            >Remember Me</label
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Log in
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex  icons" ><ul class="list-unstyled ">
+      <a href=""><li class="fs-2 text-primary  " ><i class="fab fa-facebook-square"></i></li></a>
+      <a href="">  <li class="fs-2 text-primary"><i class="fab fa-instagram-square"></i></li></a>
+      <a href=""><li class="fs-2 text-primary"><i class="fab fa-twitter-square"></i></li></a>
+      <a href=""></a> <li class="fs-2 text-primary"><i class="fab fa-whatsapp-square"></i></li></a>
+      <a href=""><li class="fs-2 text-primary"><i class="fab fa-linkedin"></i></li></a>
+    </ul></div>
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active ">
+            <img src="images/pic11.jpg" class="d-block w-100   " alt="madinty">
+            <div class="carousel-caption d-none d-md-block  ">
+              <h5>madinty city</h5>
+              <p class="text-capitalize ">developbed by taalat mostfa</p>
+              <button class="btn btn-primary" type="submit">Vist Us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/pic2.jpeg" class="d-block w-100   " alt="misr italia">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Misr italia</h5>
+              <p class="text-capitalize ">developbed by misr itaila</p>
+              <button class="btn btn-primary" type="submit">Vist Us</button>
+            </div>
+          </div>
+          <div class="carousel-item" >
+            <img src="images/pic3.jpg" class="d-block w-100  " alt="noor city">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Noor city</h5>
+              <p class="text-capitalize ">developbed by taalat mostfa</p>
+              <button class="btn btn-primary" type="submit">Vist Us</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<!-- ////////////////////////////////////////////////////////// -->
+<div class="container-fluid   " style="background-color:#4942E4 ;">
+  <h2 class="pt-3  gradient-text2" >Welcome</h2>
+  <span class="pt-2  text-capitalize d-block  text-light ">We will provide you with many new and already built real estate projects with more than 200 projects...</span>
+  <button class="btn btn-primary mt-3 " type="submit">learn more</button>
+</div>
+<div class="container-fluid bg-black ">
+<hr>
+</div>
+
+<div style="background-color: #11009E; height: 100px;" class="container-fluid  border rounded text-center  ">
+  <h2 style="padding-top:30px;" class=" text-light fs-2  text-capitalize  ">popular projects in egypt</h2>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////// -->
+<div class="accordion mt-4 " id="accordionPanelsStayOpenExample">
+  <div style="background-color: #FAE7F3;" class="accordion-item  ">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button style="background-color: #4942E4;" class="accordion-button text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+       Noor city
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <strong>This is the first city that supported the ai .</strong>  The latest residential complexes and the first smart cities near the administrative capital, designed by Talaat Mustafa Group, which was keen to establish it with the latest modern technological designs.
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #FAE7F3;" class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button style="background-color: #4942E4;" class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+      Madinty city
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <strong>a perfect place to live in as a family.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #FAE7F3;" class="accordion-item ">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button style="background-color: #4942E4;" class="accordion-button collapsed text-light " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+    Misr italia
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+        <strong>you can find itialia in egypt in this city.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div style="background-color: #11009E; height: 60px;" class=" container-fluid  border rounded text-center  ">
+  <h2 style="padding-top:12px;" class=" text-light fs-3  text-capitalize  ">copy the name of the city you want to register </h2>
+</div>
+<div style="background-color: #4942E4; height: 350px;" class=" container-fluid    ">
+ <span class="text-light">type your information</span><p class="text-dark d-inline-block ps-1 ">about the city you want.</p>
+ <!-- Button trigger modal -->
+<button style="top: 40px; right: 335px;" type="button" class="btn btn-light position-relative " data-bs-toggle="modal" data-bs-target="#exampleModal">
+copy
+</button>
+
+<!-- Modal -->
+<div class="modal fade m" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="fs-5  text-dark " id="exampleModalLabel">the text has been successfully copied</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        the text has been successfully copied
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mt-5  w-100 ">
+
+  <textarea class="form-control px-3 " id="exampleFormControlTextarea1" rows="8" ></textarea>
+</div>
+</div>
+<div style="background-color: #11009E; height: 60px;" class=" container-fluid  border rounded text-center  ">
+  <h2 style="padding-top:12px;" class=" text-light fs-3  text-capitalize  ">Translate from arabic to english </h2>
+</div>
+<div style="background-color: #4942E4; height: 350px;" class=" container-fluid    ">
+ <span class="text-light">type your information</span><p class="text-dark d-inline-block ps-1 ">about the city you want.</p>
+ <!-- Button trigger modal -->
+<button style="top: 40px; right: 335px;" type="button" class="btn btn-light position-relative " data-bs-toggle="modal" data-bs-target="#exampleModal">
+copy
+</button>
+
+<!-- Modal -->
+<div class="modal fade m" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="fs-5  text-dark " id="exampleModalLabel">the text has been successfully copied</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        the text has been successfully copied
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mt-5  w-100 ">
+
+  <textarea class="form-control px-3 " id="exampleFormControlTextarea1" rows="8" ></textarea>
+</div>
+</div>
+<div style="background-color: #11009E; height: 60px;" class=" container-fluid  border rounded text-center  ">
+  <h2 style="padding-top:12px;" class=" text-light fs-3  text-capitalize  ">translate from english to arabic</h2>
+</div>
+<div style="background-color: #4942E4; height: 350px;" class=" container-fluid    ">
+ <span class="text-light">type your information</span><p class="text-dark d-inline-block ps-1 ">about the city you want.</p>
+ <!-- Button trigger modal -->
+<button style="top: 40px; right: 335px;" type="button" class="btn btn-light position-relative " data-bs-toggle="modal" data-bs-target="#exampleModal" >
+copy
+</button>
+
+<!-- Modal -->
+<div class="modal fade m" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="fs-5  text-dark " id="exampleModalLabel">the text has been successfully copied</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        the text has been successfully copied
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mt-5  w-100 ">
+
+  <textarea class="form-control px-3 " id="exampleFormControlTextarea1" rows="8" ></textarea>
+</div>
+</div>
+<div class="test">
+<div class="overlay">
+
+</div>
+</div>
+<div style="background-color: #11009E; height: 100px;" class="container-fluid  border rounded text-center  ">
+  <h2 style="padding-top:30px;" class=" text-light fs-2  text-capitalize  ">popular projects in egypt</h2>
+</div>
+<div class="container-fluid">
+  <div>
+    <div class="row justify-content-evenly mt-4 position-relative ">
+      <div class="card animtion " style="width: 18rem;">
+        <img src="images/1.jpg" class="card-img-top" alt="..." width="400" height="300">
+        <div class="card-body ">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div><div class="card animtion " style="width: 18rem;">
+        <img src="images/2.jpg" class="card-img-top" alt="..." width="400" height="300">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div><div class="card animtion " style="width: 18rem;">
+        <img src="images/3.jpg" class="card-img-top" alt="..."width="400" height="300">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="row justify-content-evenly mt-4 ">
+        <div class="card animtion" style="width: 18rem;">
+          <img src="images/4.png" class="card-img-top" alt="..."width="400" height="300">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div><div class="card animtion" style="width: 18rem;">
+          <img src="images/5.jpeg" class="card-img-top" alt="..."width="400" height="300">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div><div class="card animtion" style="width: 18rem;">
+          <img src="images/7.jpg" class="card-img-top" alt="..." width="400" height="300">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 ">
+          <div class="card animtion" style="width: 18rem;">
+            <img src="images/8.jpg" class="card-img-top" alt="..." width="400" height="300">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div><div class="card animtion" style="width: 18rem;">
+            <img src="images/6.jpg" class="card-img-top" alt="..." width="400" height="300">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="test test1">
+<div class="overlay">
+
+</div>
+</div>
+
+<!-- /////////////////////////////////////////////////////// -->
+<div class="container-fluid mt-4  mb-5  "> 
+  <div class="row justify-content-evenly "> 
+    
+    <div class="card border border-dark rounded background-item" style="width: 21rem; height: 25rem;">
+     
+      <div class="card-body">
+        <h5 class="card-title text-center text-light fs-4 bg-dark  ">ALL thanks and appreciate</h5>
+          
+          <div >
+            <img src="images/suit1.jpg" alt="" style="width: 100px; height: 100px;  border: 2px solid black ;border-radius: 50%; margin-top: 120px;">
+            <p class="card-text text-primary fs-5 ">Co-founder of the company</p>
+         </div>
+        </div>
+     
+      </div>
+    <div class="card border border-dark    rounded  background-item2" style="width: 21rem; height: 25rem;">
+     <div class="card-body">
+      <h5 class="card-title text-center text-light fs-4 bg-dark  ">ALL thanks and appreciate</h5>
+       
+        <div >
+          <img src="images/suit2.jpg" alt="" style="width: 100px; height: 100px;  border: 2px solid black ;border-radius: 50%; margin-top: 120px;">
+          <p class="card-text text-primary fs-5">Co-founder of the company</p>
+       </div>
+      </div>
+      
+    </div>
+    <div class="card border  border-dark rounded    background-item3" style="width: 21rem; height: 25rem;">
+       <div class="card-body">
+        <h5 class="card-title text-center text-light fs-4 bg-dark  ">ALL thanks and appreciate</h5>
+     
+        <div >
+          <img src="images/suit3.jpg" alt="" style="width: 100px; height: 100px;  border: 2px solid black ;border-radius: 50%; margin-top: 120px;">
+          <p class="card-text text-primary fs-5 ">Co-founder of the company</p>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container ">
+<h2 class="pt-3  gradient-text2 text-center mb-4 gradient-text3" >Trending News</h2>
+</div>
+<div class="container ">
+
+
+<div class="card mb-3  border border-1 rounded sha " style=" width:100%; ">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="images/1.jpg" class="img-fluid rounded-start crop" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title fs-4 ">Madinty</h5>
+        
+        <i class="fas fa-table"></i> <span>mon,may 25th 2020</span>
+        <hr style="width: 90px; height: 7px; color: #11009E; border:1px solid #11009E; border-radius: 5px;">
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <button type="button" class="btn btn-primary "><i class="fas fa-tag">&numsp;Podcast</i></button>  <button type="button" class="btn btn-secondary"><i class="fas fa-clock"></i>&numsp;Timer:55min</i></button> <button type="button" class="btn btn-secondary"><i class="fas fa-play"></i>&numsp;Play eposide</i></button> 
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="container mt-5 ">
+
+
+  <div class="card mb-3  border border-1 rounded sha " style=" width:100%; ">
+    <div class="row g-0  d-flex flex-row-reverse">
+      <div class="col-md-4">
+        <img src="images/3.jpg" class="img-fluid rounded-start crop2" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title fs-4 ">The new capital</h5>
+          
+          <i class="fas fa-table"></i> <span>mon,may 25th 2020</span>
+          <hr style="width: 90px; height: 7px; color: #11009E; border:1px solid #11009E; border-radius: 5px;">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <button type="button" class="btn btn-primary "><i class="fas fa-tag">&numsp;Podcast</i></button>  <button type="button" class="btn btn-secondary"><i class="fas fa-clock"></i>&numsp;Timer:55min</i></button> <button type="button" class="btn btn-secondary"><i class="fas fa-play"></i>&numsp;Play eposide</i></button> 
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  <div class="container mt-5  ">
+
+
+    <div class="card mb-3  border border-1 rounded sha " style=" width:100%; ">
+      <div class="row g-0 ">
+        <div class="col-md-4">
+          <img src="images/2.jpg" class="img-fluid rounded-start crop" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title fs-4 ">Future city</h5>
+            
+            <i class="fas fa-table"></i> <span>mon,may 25th 2020</span>
+            <hr style="width: 90px; height: 7px; color: #11009E; border:1px solid #11009E; border-radius: 5px;">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" class="btn btn-primary "><i class="fas fa-tag">&numsp;Podcast</i></button>  <button type="button" class="btn btn-secondary"><i class="fas fa-clock"></i>&numsp;Timer:55min</i></button> <button type="button" class="btn btn-secondary"><i class="fas fa-play"></i>&numsp;Play eposide</i></button> 
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    <div class="container mt-5  ">
+
+
+      <div class="card mb-3  border border-1 rounded sha  " style=" width:100%; ">
+        <div class="row d-flex flex-row-reverse  g-0">
+          <div class="col-md-4">
+            <img src="images/6.jpg" class="img-fluid rounded-start crop2" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fs-4 ">Noor city</h5>
+              
+              <i class="fas fa-table"></i> <span>mon,may 25th 2020</span>
+              <hr style="width: 90px; height: 7px; color: #11009E; border:1px solid #11009E; border-radius: 5px;">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button type="button" class="btn btn-primary "><i class="fas fa-tag">&numsp;Podcast</i></button>  <button type="button" class="btn btn-secondary"><i class="fas fa-clock"></i>&numsp;Timer:55min</i></button> <button type="button" class="btn btn-secondary"><i class="fas fa-play"></i>&numsp;Play eposide</i></button> 
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      </div>
+      </div>
+      <div class="d-flex flex-column bg-secondary   p-3 ">
+        <div class="d-flex flex-row justify-content-evenly ">
+          <div class="d-flex flex-row justify-content-center align-items-center gap-3 p-5  border border-end-0 border-start-0 border-top">
+              <img src="./images/1.jpg" class="rounded-circle " width="100" height="100" alt="">
+              <span>Good company</span>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center gap-3 p-5  border border-end-0 border-start-0  ">
+            <img src="./images/1.jpg" class="rounded-circle " width="100" height="100" alt="">
+            <span>Good company</span>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center gap-3 p-5  border border-end-0 border-start-0  ">
+            <img src="./images/1.jpg" class="rounded-circle " width="100" height="100" alt="">
+            <span>Good company</span>
+          </div>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly ">
+          <div class="d-flex flex-column justify-content-center align-items-center gap-3 p-5  border border-end-0 border-start-0 border-bottom-0 border-top-0   ">
+              <p> Tel : 00000000000</p>           
+              <p>Good company</p>
+              <p>Hellllloooooooo</p>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center gap-3 p-5  border border-end-0 border-start-0 border-bottom-0 border-top-0   ">
+            <p> Tel : 00000000000</p>           
+            <p>Good company</p>
+            <p>Hellllloooooooo</p>
+          </div>
+          <div class="d-flex flex-column  justify-content-center align-items-center gap-3 p-5  border border-end-0 border-start-0 border-bottom-0  border-top-0  ">
+            <p> Tel : 00000000000</p>           
+            <p>Good company</p>
+            <p>Hellllloooooooo</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center p-3 border border-start-0  border-end-0 border-top border-bottom ">
+            <p class="fs-5 fw-bolder ">Copyright &copy;	2020 Mohamed Hesham , Good Company , All Rights reserved</p>
+        </div>
+      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
